@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ecosystems",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ecosyste.ms Packages MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-8e893cfbe8a7ab4a8b484a87523ba35f481f4b0d6230307ae152b581aa5260c0",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-ee6f26069b0d703a74f2e2670e930ed1b9cf908c289147e6ae9d7b168cb0bb60",
+    "sourceCommit": "4fa4c64448be06f4a2ee4cee19f756f3558a7cad"
   }
 }
