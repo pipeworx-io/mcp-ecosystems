@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-ecosystems",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "ecosyste.ms Packages MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-ecosystems": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "ecosystems"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-ecosystems.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/ecosystems",
   "pipeworx": {
-    "sourceHash": "v1-229278058f0240804969f7cc5a49956f3a16554654a9b0bb9ca3dee63f88073e",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "ecosystems",
+    "gatewaySlug": "ecosystems",
+    "sourceHash": "v1-4ae95cb711ee7b1b74116cdef853efe44ed17ababbf1ebc92e26e16e5a0573df",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }

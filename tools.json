@@ -1,0 +1,47 @@
+[
+  {
+    "name": "get_package",
+    "description": "Get a package's open metadata from ecosyste.ms — description, homepage, repository, license, latest version, monthly downloads, and dependent/usage counts. Works across 100+ registries. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Package name, e.g. \"react\", \"@vue/cli\", \"django\". Scopes/slashes are handled automatically."
+        },
+        "registry": {
+          "type": "string",
+          "description": "Registry name (default \"npmjs.org\"). e.g. \"pypi.org\", \"crates.io\", \"rubygems.org\", \"nuget.org\". Use list_registries to discover names."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "lookup_package",
+    "description": "Look up every registry a package or repository is published to, via package URL (purl) or repository URL. Returns matching package records across all registries. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "purl": {
+          "type": "string",
+          "description": "A package URL, e.g. \"pkg:npm/lodash\" or \"pkg:pypi/django\"."
+        },
+        "repository_url": {
+          "type": "string",
+          "description": "A source repository URL, e.g. \"https://github.com/facebook/react\"."
+        }
+      }
+    }
+  },
+  {
+    "name": "list_registries",
+    "description": "List the package registries ecosyste.ms supports (npm, PyPI, crates.io, Go, NuGet, Maven, RubyGems, Packagist, Docker Hub, and 100+ more) with their ecosystem and package counts. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]
