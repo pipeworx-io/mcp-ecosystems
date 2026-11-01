@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-ecosystems",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ecosyste.ms Packages MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "ecosystems",
     "gatewaySlug": "ecosystems",
-    "sourceHash": "v1-4ae95cb711ee7b1b74116cdef853efe44ed17ababbf1ebc92e26e16e5a0573df",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-c5bdaafcbd17898a461bf27505cfdc608262f4b846f23eb3c167b02defba6565",
+    "sourceCommit": "e707a4bb6209f432984c0a83bf64b3138130db89"
   }
 }
